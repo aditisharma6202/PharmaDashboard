@@ -1,19 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './dashboard-main/dashboard.css'
 import './index.css';
 import { BrowserRouter , Route } from "react-router-dom";
 import { Routes } from "react-router";
 // import ScrollIntoView from "./contents/scrollUp.js/scrollUp";
 import reportWebVitals from './reportWebVitals';
-import DashboardMain from './Dasboard';
-import Product from './Dasboard/Inventory/Product/product';
-import GroupType from './Dasboard/Inventory/GroupType/groupType';
-import GroupF2 from './Dasboard/Inventory/Group/groupF2';
-import Group from './Dasboard/Inventory/Group/group';
-import GroupFormF2 from './Dasboard/Inventory/GroupType/groupformF2';
-import TaxGroup from './Dasboard/Inventory/TaxGroup/taxGroup';
-import Leadger from './Dasboard/Inventory/Leadger/leadger';
-
+import Dashboard from './dashboard-main/dashboard';
+import ProductMaster from './dashboard-main/Master/Inventory/product/productMaster';
 
 
 
@@ -24,15 +18,9 @@ root.render(
      {/* <ScrollIntoView> */}
       
         <Routes>
-          <Route path="/" element={<DashboardMain />} />
-          <Route path="/product" element={ <Product/>} />
-          <Route path="/grouptype" element={ <GroupType/>} />
-          <Route path="/grouptypeform" element={ <GroupFormF2/>} />
-          <Route path='/groupf2' element={<GroupF2/>}/>
-        <Route path='/group' element={<Group/>}/>
-        <Route path='/taxgroup' element={<TaxGroup/>}/>
+<Route path='/' element={<Dashboard/>}/>
+<Route path='/product' element={<ProductMaster/>}/>
 
-<Route path='/leadger' element={<Leadger/>}/>
 
         </Routes>
       

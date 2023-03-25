@@ -1,0 +1,17 @@
+.tabrow{
+    background-color: var(--tab-color);
+    color:white
+}
+.tab{
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-right: 1px solid white;
+    text-align: left;
+    position: relative;
+}
+.tab-close{
+    position: absolute;
+    top:-4px;
+    right:0;
+    font-weight:600;
+}
