@@ -1,7 +1,4 @@
-.tabrow{
-    background-color: var(--tab-color);
-    color:white
-}
+
 .tab{
     font-size: 0.95rem;
     font-weight: 600;
@@ -14,4 +11,38 @@
     top:-4px;
     right:0;
     font-weight:600;
+}
+.tabrow{
+    display: none;
+}
+.table-heading{
+    font-size: 15px;
+    height: 20px;
+    text-align: left;
+    padding-left: 10px;
+    text-transform: uppercase;
+    color: #4863A0;
+    background-color: white;
+    font-weight: bold;
+}
+.full-border{
+    border: 1px solid var(--primary-two-color);
+}
+.green{
+    background-color: var(--green-button-color);
+    color:white;
+}
+.bottom-border{
+    border-bottom: 1px solid var(--primary-two-color);
+}
+.footer{
+    min-height: 100px;
+    background-color: var(--tab-color);
+}
+@media (min-width:60em) {
+    .tabrow{
+        background-color: var(--tab-color);
+        color:white
+    }
+    
 }
