@@ -22,7 +22,7 @@
     top:0;
     right:0;
     left:0;
-    z-index: 1000;
+   z-index: 1;
     min-height: 30px;
   
 }
@@ -90,8 +90,8 @@ overflow-x: visible;
     width: 14rem;
     font-size: 0.8rem;
     color: var(--primary-color);
-  
-}.logout-menu{
+    
+  }.logout-menu{
     font-size: 0.85rem;
     position: fixed;
     right:0;
@@ -236,6 +236,7 @@ z-index: 200;
       font-weight: 600;
       font-size: 0.9rem;
       text-transform: uppercase;
+      z-index: 10000;
     
     }
     .header-icons{

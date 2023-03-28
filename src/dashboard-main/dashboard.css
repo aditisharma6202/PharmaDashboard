@@ -39,6 +39,13 @@
     min-height: 100px;
     background-color: var(--tab-color);
 }
+.text-size-15px{
+font-size: 15px;
+}
+.below-header{
+    min-height:30px ;
+    background-color: var(--tab-color);
+}
 @media (min-width:60em) {
     .tabrow{
         background-color: var(--tab-color);

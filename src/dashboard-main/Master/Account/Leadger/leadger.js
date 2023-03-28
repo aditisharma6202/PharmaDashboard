@@ -1,8 +1,11 @@
 import React from 'react';
+import Footer from '../../../../Footer/footer';
+import Header from '../../../../header/header';
 import { Link } from 'react-router-dom';
 import { Cell, Column, Table ,ColumnHeaderCell2} from "@blueprintjs/table";
+import LeadgerForm from './leadgerForm';
 
-function ProductTable() {
+function Leadger() {
     const dollarCellRenderer = (rowIndex) => (
         <Cell style={{fontSize:'17px'}}>{`$${(rowIndex * 10).toFixed(2)}`}</Cell>
     );
@@ -59,21 +62,24 @@ function ProductTable() {
             style={{ color: "white",backgroundColor:'#AA6C39',textTransform:'uppercase' }}
         />
     };
-  
-    return (
-        <div>
+    return ( <div>
+        <Header/>
+        <div className="below-header col-12 mt-5"></div>
+        <div className='row  px-4 py-2'>
+            <div className='col-md-8 col-12'>
+            <div className='row full-border'>
             <div className='col-12 '>
-            <div className='d-flex justify-content-between align-item-center bottom-border py-1'>  <h5 className=' table-heading align-item-center'>PRODUCT MASTER</h5>
+            <div className='d-flex justify-content-between align-item-center bottom-border py-1'>  <h4 className=' table-heading align-item-center'>SUPPLIER MASTER</h4>
             <div className='btn-group-sm '>
-                <Link to={'/productf2'}className='btn green fw-bold' style={{borderTopRightRadius:'0px' ,borderBottomRightRadius:'0px'}}><i class="bi bi-plus-circle-fill px-2"></i>ADD</Link>
-                <Link to={'/productf2'} className='btn btn-light fw-bold'>F2</Link>
+                <Link to={'/leadgerf2'}className='btn green fw-bold' style={{borderTopRightRadius:'0px' ,borderBottomRightRadius:'0px'}}><i class="bi bi-plus-circle-fill px-2"></i>ADD</Link>
+                <Link to={'/leadgerf2'} className='btn btn-light fw-bold'>F2</Link>
                 </div>
                 </div>
             </div>
             <div className=''>
                 <div className='d-flex p-1'>
                     <input placeholder={'search'} className='col-6 p-1'/>
-                    <div className='col-6'> dropdown</div>
+                   
                 </div>
             </div>
          <Table numRows={10} enableRowHeader={false} rowHeights={[37,37,37,37,37,37,37,37,37,37,]} columnWidths={[364,150,280,130,130,180]} >
@@ -85,9 +91,27 @@ function ProductTable() {
     <Column  cellRenderer={actionCellRenderer} columnHeaderCellRenderer={sampleColumnSix} />
 
 </Table>
+<LeadgerForm/>
+<div className="col-12 px-3 py-1 form-bottom">
+        <div className="row gap-4">
+          <div className="col-2 text-light bg-primary">C.R. DATE-</div>
+          <div className="col-2 text-light bg-primary">M.D. DATE-</div>
+          <div className="col-2 text-light bg-primary">L.A.-</div>
+
         </div>
-   
-);
+       
+
+      </div>
+      
+            </div>
+
+          
+            </div>
+           
+        </div>
+
+        <Footer/>
+    </div> );
 }
 
-export default ProductTable;
+export default Leadger;
