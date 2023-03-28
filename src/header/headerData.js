@@ -2,19 +2,19 @@
 
 //dropdown nested under master
 //dropdown for account
-const nestedAccountData=[{title:'Group Type', link:'grouptype'},{title:'Group', link:'group'},{title:'Tax Group', link:'taxgroup'},{title:'Leadger', link:'leadger'},{title:'HSN', link:'/'},
+const nestedAccountData=[{title:'Group Type', link:'grouptype'},{title:'Group', link:'group'},{title:'Tax Group', link:'taxgroup'},{title:'Leadger', link:'leadger'},{title:'HSN', link:'hsn'},
 {title:'Bank', link:'/'}
 ]
 
 const nestedInventoryData=[
     {title:'Product', link:'product'},
-    {title:'Category', link:'/'},
-    {title:'Brand', link:''},
+    {title:'Category', link:'category'},
+    {title:'Brand', link:'brand'},
     {title:'Group', link:'/'},
     
-    {title:'Pack', link:'/'},
-    {title:'Unit', link:'/'},
-    {title:'Rack', link:'/'},
+    {title:'Pack', link:'pack'},
+    {title:'Unit', link:'unit'},
+    {title:'Rack', link:'rack'},
 ]
 const nestedHRData=[
     {title:'Department', link:'/'},
