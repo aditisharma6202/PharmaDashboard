@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "../../../../Footer/footer";
 import Header from "../../../../header/header";
-function HSNF2() {
+function CategoryF2() {
   return (
     <div>
       <Header />
       <div className="below-header col-12 mt-5"></div>
       <form className="row p-2 px-4 bg-aliceblue ">
-        <div className="col-md-8 col-12">
+        <div className="col-12">
           <div className="card full-border">
             <div className="card-body">
               <h5 className="title">NEW GROUP</h5>
@@ -16,25 +16,17 @@ function HSNF2() {
 
                 <div className="col-md-6 col-12">
                   <div className="row fw-bold text-size-15px">
-                    <div className="fw-bold col-md-6 col-12 mt-1">HSN <span className="text-danger">*</span></div>
+                    <div className="fw-bold col-md-6 col-12 mt-1">CATEGORY<span className="text-danger">*</span></div>
                     <input placeholder="" className="col-md-6 col-12 mt-1" />
-                    <div className="fw-bold col-md-6 col-12 mt-1"> IGST<span className="text-danger">*</span> </div>
-                    <input placeholder="" className="col-md-6 col-12 mt-1" />
-                    <div className="fw-bold col-md-6 col-12 mt-1"> CGST<span className="text-danger">*</span> </div>
-                    <input placeholder="" className="col-md-6 col-12 mt-1" />
+                    
                   </div>
                 </div>
 
                 <div className="col-md-6 col-12">
                   <div className="row fw-bold text-size-15px">
                   
-                    <div className="fw-bold col-md-6 col-12 mt-1">TAX GROUP<span className="text-danger">*</span></div>
-                    <input placeholder="" className="col-md-6 col-12 mt-1" />
-                    
-                    <div className="fw-bold col-md-6 col-12 mt-1">SGST<span className="text-danger">*</span></div>
-                    <input placeholder="" className="col-md-6 col-12 mt-1" />
-                    
-                    <div className="col-md-6 col-12">SGST*</div>
+                   
+                    <div className="col-md-6 col-12">STATUS</div>
                     <div className="col-md-6 col-12">
                       <select
                         class="form-select form-select-sm "
@@ -66,12 +58,13 @@ function HSNF2() {
           </div>
         </div>
 
-        <div className="col-md-4 col-12"></div>
+       
       </form>
       <Footer />
     </div>
   );
 }
 
-export default HSNF2;
+export default CategoryF2;
 
+;

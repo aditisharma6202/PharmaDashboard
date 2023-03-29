@@ -10,16 +10,16 @@ const nestedInventoryData=[
     {title:'Product', link:'product'},
     {title:'Category', link:'category'},
     {title:'Brand', link:'brand'},
-    {title:'Group', link:'/'},
+    {title:'Group', link:'groupInventory'},
     
     {title:'Pack', link:'pack'},
     {title:'Unit', link:'unit'},
     {title:'Rack', link:'rack'},
 ]
 const nestedHRData=[
-    {title:'Department', link:'/'},
-    {title:'Designation', link:'/'},
-    {title:'Employee', link:'/'},
+    {title:'Department', link:'department'},
+    {title:'Designation', link:'designation'},
+    {title:'Employee', link:'employee'},
 ]
 //nested dropdowns of master ends here
 

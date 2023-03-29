@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../../../../Footer/footer";
 import Header from "../../../../header/header";
-function HSNF2() {
+function GroupInventoryF2() {
   return (
     <div>
       <Header />
@@ -16,34 +16,38 @@ function HSNF2() {
 
                 <div className="col-md-6 col-12">
                   <div className="row fw-bold text-size-15px">
-                    <div className="fw-bold col-md-6 col-12 mt-1">HSN <span className="text-danger">*</span></div>
+                    <div className="fw-bold col-md-6 col-12 mt-1">GROUP <span className="text-danger">*</span></div>
                     <input placeholder="" className="col-md-6 col-12 mt-1" />
-                    <div className="fw-bold col-md-6 col-12 mt-1"> IGST<span className="text-danger">*</span> </div>
-                    <input placeholder="" className="col-md-6 col-12 mt-1" />
-                    <div className="fw-bold col-md-6 col-12 mt-1"> CGST<span className="text-danger">*</span> </div>
+                    <div className="fw-bold col-md-6 col-12 mt-1"> MASTER GROUP </div>
                     <input placeholder="" className="col-md-6 col-12 mt-1" />
                   </div>
                 </div>
 
                 <div className="col-md-6 col-12">
                   <div className="row fw-bold text-size-15px">
-                  
-                    <div className="fw-bold col-md-6 col-12 mt-1">TAX GROUP<span className="text-danger">*</span></div>
-                    <input placeholder="" className="col-md-6 col-12 mt-1" />
-                    
-                    <div className="fw-bold col-md-6 col-12 mt-1">SGST<span className="text-danger">*</span></div>
-                    <input placeholder="" className="col-md-6 col-12 mt-1" />
-                    
-                    <div className="col-md-6 col-12">SGST*</div>
+                    <div className="col-md-6 col-12">MAIN GROUP</div>
                     <div className="col-md-6 col-12">
                       <select
                         class="form-select form-select-sm "
                         aria-label=".form-select-sm example"
                       >
                         <option selected value="1">
-                          ACTIVE
+                          YES
                         </option>
-                        <option value="2">DEACTIVE</option>
+                        <option value="2">NO</option>
+                        
+                      </select>
+                    </div>
+                    <div className="col-md-6 col-12">ACTIVE</div>
+                    <div className="col-md-6 col-12">
+                      <select
+                        class="form-select form-select-sm "
+                        aria-label=".form-select-sm example"
+                      >
+                        <option selected value="1">
+                          YES
+                        </option>
+                        <option value="2">NO</option>
                         
                       </select>
                     </div>
@@ -73,5 +77,5 @@ function HSNF2() {
   );
 }
 
-export default HSNF2;
+export default GroupInventoryF2;
 
